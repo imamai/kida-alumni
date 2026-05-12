@@ -343,14 +343,8 @@ header {
 header::after {
   content: '';
   display: block;
-  height: 7px;
-  background: linear-gradient(
-    180deg,
-    var(--kida-gold) 0%,
-    var(--kida-gold) 57%,
-    var(--kida-maroon) 57%,
-    var(--kida-maroon) 100%
-  );
+  height: 4px;
+  background: var(--kida-maroon);
 }
 
 nav {
@@ -510,14 +504,8 @@ footer {
 footer::before {
   content: '';
   display: block;
-  height: 7px;
-  background: linear-gradient(
-    180deg,
-    #caa45f 0%,
-    #caa45f 57%,
-    #8b1a1a 57%,
-    #8b1a1a 100%
-  );
+  height: 4px;
+  background: var(--kida-gold);
 }
 
 footer .footer-content {
