@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIDA Alumni - Professional Network for Graduates</title>
+    <meta name="description" content="KIDA Alumni network website - Connecting graduates, educators, and partners for scholarship, leadership, and service.">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- HEADER / NAVBAR -->
+        <header>
+            <nav>
+                <a href="index.html" class="logo"><img src="assets/kida-logo.png" alt="KIDA Alumni" style="height:56px;width:auto;display:block;"></a>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="nav-mobile-menu" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                </button>
+            </nav>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex-1">
+            <!-- HERO SECTION -->
+            <div class="space-y-14">
+                <section class="card card-lg rounded-2xl">
+                    <p class="text-sm font-semibold uppercase tracking-wider text-blue-900">KIDA Alumni Association</p>
+                    <h1 class="mt-3 max-w-3xl leading-tight">
+                        Advancing scholarship, service, and lifelong alumni engagement.
+                    </h1>
+                    <div style="margin-top: 12px; padding: 12px 16px; background: linear-gradient(135deg, var(--kida-gold) 0%, #b8933f 100%); border-radius: 6px; display: inline-block;">
+                        <p style="font-size: 16px; font-weight: 700; color: var(--white); margin: 0;">💡 We are Better Together</p>
+                    </div>
+                    <p class="mt-4 max-w-2xl text-base leading-7">
+                        A professional community connecting KIDA graduates, educators, and partners to support learning,
+                        innovation, and social impact.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="register.html" class="btn btn-primary">
+                            Register & pay (M-Pesa)
+                            <i class="fas fa-arrow-right" style="font-size: 12px;"></i>
+                        </a>
+                        <a href="events.html" class="btn btn-secondary">
+                            View Events
+                        </a>
+                    </div>
+                </section>
+
+                <!-- HIGHLIGHTS SECTION -->
+                <section class="grid grid-cols-3">
+                    <!-- Card 1 -->
+                    <article class="card rounded-xl">
+                        <i class="fas fa-book-open icon" style="color: var(--kida-navy);"></i>
+                        <h2 class="mt-4 text-lg font-semibold">Academic Mentorship</h2>
+                        <p class="mt-2 text-sm leading-6">
+                            Connect students with experienced alumni for structured guidance and growth.
+                        </p>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card rounded-xl">
+                        <i class="fas fa-users icon" style="color: var(--kida-navy);"></i>
+                        <h2 class="mt-4 text-lg font-semibold">Professional Network</h2>
+                        <p class="mt-2 text-sm leading-6">
+                            Strengthen community through alumni chapters, knowledge exchange, and leadership.
+                        </p>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card rounded-xl">
+                        <i class="fas fa-calendar-days icon" style="color: var(--kida-navy);"></i>
+                        <h2 class="mt-4 text-lg font-semibold">Annual Events</h2>
+                        <p class="mt-2 text-sm leading-6">
+                            Celebrate milestones with reunions, seminars, and institutional partnerships.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <p style="font-size: 18px; font-weight: 700; color: var(--kida-navy); margin-bottom: 8px;">KIDA</p>
+                    <p style="font-size: 12px; font-weight: 600; color: var(--kida-gold); margin-bottom: 12px;">We are Better Together</p>
+                    <p class="max-w-sm text-sm leading-6">
+                        Building lifelong connections through scholarship, service, and professional excellence.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">Alumni Directory</a></li>
+                        <li><a href="events.html">News & Publications</a></li>
+                        <li><a href="contact.html">Annual Reunion</a></li>
+                        <li><a href="register.html">Register (M-Pesa)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope icon" style="font-size: 14px;"></i>
+                            alumni@kida.org
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone icon" style="font-size: 14px;"></i>
+                            +254 700 000 000
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-pin icon" style="font-size: 14px;"></i>
+                            Nairobi, Kenya
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

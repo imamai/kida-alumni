@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - KIDA Alumni</title>
+    <meta name="description" content="Register as a KIDA Alumni member with M-Pesa payment.">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- HEADER / NAVBAR -->
+        <header>
+            <nav>
+                <a href="index.html" class="logo"><img src="assets/kida-logo.png" alt="KIDA Alumni" style="height:56px;width:auto;display:block;"></a>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="nav-mobile-menu" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                </button>
+            </nav>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex-1">
+            <div class="space-y-10">
+                <!-- HEADER SECTION -->
+                <section class="card card-lg rounded-2xl">
+                    <p class="text-sm font-semibold uppercase tracking-wider text-blue-900">Membership</p>
+                    <h1 class="mt-3">Join the KIDA Alumni Network</h1>
+                    <p class="mt-4 max-w-3xl text-base leading-7">
+                        Complete your registration and unlock exclusive benefits including networking opportunities, 
+                        mentorship programs, and access to alumni events.
+                    </p>
+                    <div style="margin-top: 16px; padding: 12px 16px; background: var(--kida-navy); border-radius: 6px; display: inline-block; border-left: 4px solid var(--kida-gold);">
+                        <p style="font-size: 14px; font-weight: 600; color: white; margin: 0;">💡 We are Better Together</p>
+                    </div>
+                </section>
+
+                <!-- REGISTRATION FORM & PRICING -->
+                <div class="grid grid-cols-2">
+                    <!-- REGISTRATION FORM -->
+                    <section class="card rounded-xl">
+                        <h2 class="text-lg font-semibold mb-6">Registration Form</h2>
+                        <form id="registrationForm" class="space-y-4">
+                            <div>
+                                <label for="fullName" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Email Address *</label>
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Phone Number (M-Pesa) *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+254" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="graduationYear" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Year of Graduation *</label>
+                                <input type="number" id="graduationYear" name="graduationYear" min="1980" max="2026" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="field" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Field of Study *</label>
+                                <input type="text" id="field" name="field" placeholder="e.g., Engineering, Business" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="company" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Current Organization</label>
+                                <input type="text" id="company" name="company" style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                            </div>
+
+                            <div>
+                                <label for="amount" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Membership Fee (KES) *</label>
+                                <select id="amount" name="amount" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                                    <option value="">Select membership tier</option>
+                                    <option value="500">Basic - KES 500</option>
+                                    <option value="1000">Standard - KES 1,000</option>
+                                    <option value="2000">Premium - KES 2,000</option>
+                                </select>
+                            </div>
+
+                            <div style="padding-top: 12px;">
+                                <button type="submit" class="btn btn-primary w-full" style="width: 100%; justify-content: center;">
+                                    Proceed to Payment
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- MEMBERSHIP TIERS -->
+                    <section class="space-y-4">
+                        <div class="card rounded-xl">
+                            <h3 class="text-lg font-semibold mb-2" style="color: var(--kida-navy);">Basic Tier</h3>
+                            <p style="font-size: 28px; font-weight: 700; color: var(--kida-navy); margin: 12px 0;">KES 500</p>
+                            <ul class="space-y-2 text-sm" style="margin-top: 16px;">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Access to alumni network
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Event notifications
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Newsletter access
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card rounded-xl" style="border: 2px solid var(--kida-gold);">
+                            <div style="background: var(--kida-gold); color: var(--white); padding: 8px 12px; border-radius: 4px; display: inline-block; font-size: 12px; font-weight: 600; margin-bottom: 12px;">POPULAR</div>
+                            <h3 class="text-lg font-semibold mb-2" style="color: var(--kida-navy);">Standard Tier</h3>
+                            <p style="font-size: 28px; font-weight: 700; color: var(--kida-navy); margin: 12px 0;">KES 1,000</p>
+                            <ul class="space-y-2 text-sm" style="margin-top: 16px;">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Everything in Basic
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Mentorship program
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Event discounts
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Directory listing
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card rounded-xl">
+                            <h3 class="text-lg font-semibold mb-2" style="color: var(--kida-navy);">Premium Tier</h3>
+                            <p style="font-size: 28px; font-weight: 700; color: var(--kida-navy); margin: 12px 0;">KES 2,000</p>
+                            <ul class="space-y-2 text-sm" style="margin-top: 16px;">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Everything in Standard
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    VIP event access
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Professional consultation
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-check" style="color: var(--kida-navy);"></i>
+                                    Exclusive networking
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <p style="font-size: 18px; font-weight: 700; color: var(--kida-navy); margin-bottom: 8px;">KIDA</p>
+                    <p style="font-size: 12px; font-weight: 600; color: var(--kida-gold); margin-bottom: 12px;">We are Better Together</p>
+                    <p class="max-w-sm text-sm leading-6">
+                        Building lifelong connections through scholarship, service, and professional excellence.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">Alumni Directory</a></li>
+                        <li><a href="events.html">News & Publications</a></li>
+                        <li><a href="contact.html">Annual Reunion</a></li>
+                        <li><a href="register.html">Register (M-Pesa)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope icon" style="font-size: 14px;"></i>
+                            alumni@kida.org
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone icon" style="font-size: 14px;"></i>
+                            +254 700 000 000
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-pin icon" style="font-size: 14px;"></i>
+                            Nairobi, Kenya
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/script.js"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const fullName = document.getElementById('fullName').value;
+            const phone = document.getElementById('phone').value;
+            const amount = document.getElementById('amount').value;
+            
+            if (!fullName || !phone || !amount) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Store registration data (for demonstration)
+            const registrationData = {
+                fullName,
+                email: document.getElementById('email').value,
+                phone,
+                graduationYear: document.getElementById('graduationYear').value,
+                field: document.getElementById('field').value,
+                company: document.getElementById('company').value,
+                amount
+            };
+            
+            localStorage.setItem('kidaRegistration', JSON.stringify(registrationData));
+            
+            // Simulate M-Pesa payment initiation
+            alert(`Registration started!\n\nPhone: ${phone}\nAmount: KES ${amount}\n\nIn production, this would initiate M-Pesa payment.`);
+        });
+    </script>
+</body>
+</html>

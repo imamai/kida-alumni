@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - KIDA Alumni</title>
+    <meta name="description" content="Upcoming events and engagements for the KIDA Alumni community.">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- HEADER / NAVBAR -->
+        <header>
+            <nav>
+                <a href="index.html" class="logo"><img src="assets/kida-logo.png" alt="KIDA Alumni" style="height:56px;width:auto;display:block;"></a>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="nav-mobile-menu" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                </button>
+            </nav>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex-1">
+            <div class="space-y-10">
+                <!-- HEADER SECTION -->
+                <section class="card card-lg rounded-2xl">
+                    <p class="text-sm font-semibold uppercase tracking-wider text-blue-900">Events</p>
+                    <h1 class="mt-3">Stay connected through alumni events.</h1>
+                    <p class="mt-4 max-w-3xl text-base leading-7">
+                        Join professional forums, mentorship sessions, and annual gatherings designed to foster meaningful
+                        collaboration and knowledge sharing. <span style="color: var(--kida-navy); font-weight: 600;">💡 We are Better Together</span>
+                    </p>
+                </section>
+
+                <!-- EVENTS LIST -->
+                <section class="space-y-4">
+                    <!-- Event 1 -->
+                    <article class="card rounded-xl">
+                        <h2 class="text-lg font-semibold">Alumni Professional Forum</h2>
+                        <div class="mt-3 flex flex-wrap gap-4 text-sm">
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-calendar icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                June 12, 2026
+                            </span>
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-clock icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                10:00 AM - 1:00 PM
+                            </span>
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-map-pin icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                KIDA Main Hall, Nairobi
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Event 2 -->
+                    <article class="card rounded-xl">
+                        <h2 class="text-lg font-semibold">Mentorship Orientation</h2>
+                        <div class="mt-3 flex flex-wrap gap-4 text-sm">
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-calendar icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                July 3, 2026
+                            </span>
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-clock icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                2:00 PM - 4:00 PM
+                            </span>
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-map-pin icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                Virtual (Zoom)
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Event 3 -->
+                    <article class="card rounded-xl">
+                        <h2 class="text-lg font-semibold">Annual Reunion Gala</h2>
+                        <div class="mt-3 flex flex-wrap gap-4 text-sm">
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-calendar icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                August 21, 2026
+                            </span>
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-clock icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                6:00 PM - 10:00 PM
+                            </span>
+                            <span class="inline-flex items-center gap-2">
+                                <i class="fas fa-map-pin icon" style="font-size: 14px; color: var(--kida-navy);"></i>
+                                Safari Park Hotel, Nairobi
+                            </span>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <p style="font-size: 18px; font-weight: 700; color: var(--kida-navy); margin-bottom: 8px;">KIDA</p>
+                    <p style="font-size: 12px; font-weight: 600; color: var(--kida-gold); margin-bottom: 12px;">We are Better Together</p>
+                    <p class="max-w-sm text-sm leading-6">
+                        Building lifelong connections through scholarship, service, and professional excellence.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">Alumni Directory</a></li>
+                        <li><a href="events.html">News & Publications</a></li>
+                        <li><a href="contact.html">Annual Reunion</a></li>
+                        <li><a href="register.html">Register (M-Pesa)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope icon" style="font-size: 14px;"></i>
+                            alumni@kida.org
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone icon" style="font-size: 14px;"></i>
+                            +254 700 000 000
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-pin icon" style="font-size: 14px;"></i>
+                            Nairobi, Kenya
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

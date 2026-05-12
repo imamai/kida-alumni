@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - KIDA Alumni</title>
+    <meta name="description" content="Contact the KIDA Alumni Association.">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- HEADER / NAVBAR -->
+        <header>
+            <nav>
+                <a href="index.html" class="logo"><img src="assets/kida-logo.png" alt="KIDA Alumni" style="height:56px;width:auto;display:block;"></a>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <button class="nav-mobile-menu" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                    <span style="width: 24px; height: 2px; background: currentColor;"></span>
+                </button>
+            </nav>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex-1">
+            <div class="space-y-10">
+                <!-- HEADER SECTION -->
+                <section class="card card-lg rounded-2xl">
+                    <p class="text-sm font-semibold uppercase tracking-wider text-blue-900">Contact</p>
+                    <h1 class="mt-3">Reach the KIDA Alumni Secretariat.</h1>
+                    <p class="mt-4 max-w-3xl text-base leading-7">
+                        We are available for partnership opportunities, alumni engagement, and mentorship collaboration. <br>
+                        <strong style="color: var(--kida-navy);">💡 We are Better Together</strong>
+                    </p>
+                </section>
+
+                <!-- CONTACT INFO CARDS -->
+                <section class="grid grid-cols-3">
+                    <!-- Email -->
+                    <article class="card rounded-xl">
+                        <i class="fas fa-envelope icon-lg" style="color: var(--kida-navy);"></i>
+                        <h2 class="mt-4 text-lg font-semibold">Email</h2>
+                        <p class="mt-2 text-sm">
+                            <a href="mailto:alumni@kida.org" style="color: var(--kida-navy); font-weight: 500;">alumni@kida.org</a>
+                        </p>
+                    </article>
+
+                    <!-- Phone -->
+                    <article class="card rounded-xl">
+                        <i class="fas fa-phone icon-lg" style="color: var(--kida-navy);"></i>
+                        <h2 class="mt-4 text-lg font-semibold">Phone</h2>
+                        <p class="mt-2 text-sm">
+                            <a href="tel:+254700000000" style="color: var(--kida-navy); font-weight: 500;">+254 700 000 000</a>
+                        </p>
+                    </article>
+
+                    <!-- Address -->
+                    <article class="card rounded-xl">
+                        <i class="fas fa-map-pin icon-lg" style="color: var(--kida-navy);"></i>
+                        <h2 class="mt-4 text-lg font-semibold">Address</h2>
+                        <p class="mt-2 text-sm">KIDA Campus Road, Nairobi, Kenya</p>
+                    </article>
+                </section>
+
+                <!-- CONTACT FORM -->
+                <section class="card rounded-xl">
+                    <h2 class="text-lg font-semibold mb-6">Send us a Message</h2>
+                    <form method="POST" action="https://formspree.io/f/YOUR_FORM_ID" class="space-y-4">
+                        <div>
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Full Name</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                        </div>
+
+                        <div>
+                            <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Email Address</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                        </div>
+
+                        <div>
+                            <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Subject</label>
+                            <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px;">
+                        </div>
+
+                        <div>
+                            <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--slate-900);">Message</label>
+                            <textarea id="message" name="message" required rows="5" style="width: 100%; padding: 10px 12px; border: 1px solid var(--slate-200); border-radius: 6px; font-size: 14px; font-family: inherit;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <p style="font-size: 18px; font-weight: 700; color: var(--kida-navy); margin-bottom: 8px;">KIDA</p>
+                    <p style="font-size: 12px; font-weight: 600; color: var(--kida-gold); margin-bottom: 12px;">We are Better Together</p>
+                    <p class="max-w-sm text-sm leading-6">
+                        Building lifelong connections through scholarship, service, and professional excellence.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">Alumni Directory</a></li>
+                        <li><a href="events.html">News & Publications</a></li>
+                        <li><a href="contact.html">Annual Reunion</a></li>
+                        <li><a href="register.html">Register (M-Pesa)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope icon" style="font-size: 14px;"></i>
+                            alumni@kida.org
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone icon" style="font-size: 14px;"></i>
+                            +254 700 000 000
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-pin icon" style="font-size: 14px;"></i>
+                            Nairobi, Kenya
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
