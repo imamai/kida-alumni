@@ -5,7 +5,9 @@
 /* CSS VARIABLES */
 :root {
   --kida-navy: #2a4a7f;
+  --kida-deep: #1e2464;
   --kida-gold: #caa45f;
+  --kida-maroon: #8b1a1a;
   --kida-ink: #0f172a;
   --slate-900: #0f172a;
   --slate-700: #334155;
@@ -335,8 +337,20 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 3px solid var(--kida-gold);
-  background-color: var(--kida-navy);
+  background-color: var(--kida-deep);
+}
+
+header::after {
+  content: '';
+  display: block;
+  height: 7px;
+  background: linear-gradient(
+    180deg,
+    var(--kida-gold) 0%,
+    var(--kida-gold) 57%,
+    var(--kida-maroon) 57%,
+    var(--kida-maroon) 100%
+  );
 }
 
 nav {
@@ -483,8 +497,27 @@ main {
 /* FOOTER */
 footer {
   margin-top: 64px;
-  border-top: 1px solid var(--slate-200);
-  background-color: var(--white);
+  background-color: var(--kida-deep);
+  /* Override CSS variables so inline styles using them flip to light colors */
+  --kida-navy: #ffffff;
+  --kida-gold: #caa45f;
+  --slate-900: #ffffff;
+  --slate-700: rgba(255,255,255,0.85);
+  --slate-600: rgba(255,255,255,0.7);
+  --blue-900: #caa45f;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  height: 7px;
+  background: linear-gradient(
+    180deg,
+    #caa45f 0%,
+    #caa45f 57%,
+    #8b1a1a 57%,
+    #8b1a1a 100%
+  );
 }
 
 footer .footer-content {
@@ -525,15 +558,15 @@ footer ul {
 
 footer li {
   font-size: 14px;
-  color: var(--slate-600);
+  color: rgba(255,255,255,0.7);
 }
 
 footer li a {
-  color: var(--slate-600);
+  color: rgba(255,255,255,0.7);
 }
 
 footer li a:hover {
-  color: var(--kida-navy);
+  color: var(--kida-gold);
 }
 
 footer h4 {
@@ -541,7 +574,20 @@ footer h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--blue-900);
+  color: var(--kida-gold);
+}
+
+footer .icon {
+  color: var(--kida-gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.04em;
 }
 
 /* ICON STYLES */
